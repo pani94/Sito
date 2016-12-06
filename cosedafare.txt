@@ -1,0 +1,11 @@
+
+- mettere a posto i css;
+- Mettere apposto la visualizzazione dell immagine del profilo ;
+- Controllo sul login!
+- Mettere dove necessario la funzione autorizza;
+- Vedere se fare la autocomplete;
+- Mettere a posto lo stile delle preferenze;
+- Dare messaggio di errore se la modifica del profilo della password o delle materie non va a buon fine;
+- Disabilitare il checkbox se ha già scelto una materia!
+-Vedere dove far vedere le materie preferite!
+- Vedere se fare il modifica profilo;

@@ -1,0 +1,33 @@
+
+
+#pos_modifica{
+    position: absolute;
+    float: left;
+    left:20%;
+    top:40%;
+
+    font-family: Purisa,Berlin Sans FB, sans-serif;
+    font-size: 110%;
+    color: darkblue;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px aliceblue, 0 0 70px aliceblue, 0 0 80px aliceblue, 0 0 100px aliceblue, 0 0 150px aliceblue;
+
+}
+#pos_imm_prof{
+    position:absolute;
+    float: left;
+
+    top:11%;
+    left: 2%;
+}
+#pos_field{
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    float: left;
+}
+#pos_scritta{
+    position: absolute;
+    top: 10%;
+    left:5%;
+    float: left;
+}

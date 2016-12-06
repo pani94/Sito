@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Registrati</title>
+        <link rel="stylesheet" type="text/css" href="style_registrati.css"/>
+        <script src="form.js"></script>
+
+
+    </head>
+
+     <body>
+
+        <div id ="pos_barra">
+            <ul>
+              <li><a class="active menu_titolo" href="index.html" >Tutor.it</a></li>
+              <li><a href="#" class = "menu">Materie</a></li>
+              <li><a href="#" class = "menu">Tutor</a></li>
+              <li><a href="#" class = "menu">Come funziona</a></li>
+              <li id ="right"><a href="login.html" class = "menu">Login</a></li>
+              <li id="right"><a href="registrati.html" class = "menu">Registrati</a></li>
+            </ul>
+        </div>
+
+         <div id="pos_form">
+
+         <form name ="myForm" method="post" action="php_registrati.php" onsubmit= "return checkForm()" >
+  <fieldset id="stile_elenco">
+    <legend id="stile_legend">Account</legend>
+    E-mail
+    <input type="text" name="email" id="email" onblur = "return validate(this.id)" oninput="pulisci(this.id)"> <p id="erremail"></p>
+    <br>
+    Username
+    <input type="text" name="username" id="username" onblur = "return validate(this.id)" oninput="pulisci(this.id)"> <p id="errusername"></p>
+      <br>
+    Password
+    <input type="password" name="password" id="password" onblur = "return validate(this.id)" oninput="pulisci(this.id)"> <p id="errpassword"></p>
+    <br>
+    Ripeti password
+    <input type="password" name="ripeti" id="ripeti" onblur = "return confirm()"> <p id="errripeti" oninput="pulisci(this.id)"></p>
+    <br>
+    Iscriviti come
+      <input type="radio" name="iscritto" id="iscritto" value="tutor" checked>Tutor
+      <input type="radio" name="iscritto" id="iscritto" value="studente">Studente<br><br>
+  </fieldset>
+    <br>
+ <fieldset id="stile_elenco">
+     <legend id="stile_legend">Dati personali</legend>
+     Nome
+     <input type="text" name="nome" id="nome" onblur = "return validate(this.id)" oninput="pulisci(this.id)"> <p id="errnome"></p>
+     <br>
+     Cognome
+     <input type="text" name="cognome" id="cognome" onblur = "return validate(this.id)" oninput="pulisci(this.id)"> <p id="errcognome"></p>
+     <br>
+     Titolo di studio
+     <select id="stile_tendina" name="scuola">
+         <option value="elementari">Elementari</option>
+          <option value="medie">Medie</option>
+           <option value="diploma">Diploma</option>
+            <option value="laurea">Laurea</option>
+
+     </select><br><br>
+     Citt&agrave;
+     <input type="text" name="citta" id="citta"  oninput="pulisci(this.id)" > <p id="errcitta"></p>
+
+             </fieldset>
+             <br>
+     <input type="submit" id="bottone" class="button button2" value="Registrati">
+</form>
+             </div>
+
+         <img src="images/tutor-universita.jpg" alt="prof" id="pos_prof">
+
+          <div id="pos_contatto"><p class = "box"><a href="#">Contatti</a><br><a href="#">FAQ</a></p>
+        <p class="box_right"><a href="#">Termini e condizioni</a><br><a href="#">Privacy policy</a></p>
+        <img src="images/facebook.png" alt="icona facebook" id="pos_facebook">
+        <img src="images/twitter.png" alt="icona twitter" id="pos_twitter">
+        <img src="images/google_plus.png" alt="icona google_plus" id="pos_google">
+        <img src="images/you-tube.png" alt="icona facebook" id="pos_youtube">
+        </div>
+
+
+    </body>
