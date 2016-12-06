@@ -17,6 +17,7 @@
         <div id ="pos_barra">
         <ul>
           <li><a class="active menu_titolo " href="index.php" >Tutor.it</a></li>
+<<<<<<< d0ea99166108bf38a3c5c7e22d2cc814a16639ab
           <li><a class="menu" href="#">Materie</a></li>
           <li><a class="menu" href="#">Tutor</a></li>
           <li><a class="menu" href="#">Come funziona</a></li>
@@ -27,6 +28,16 @@
 
           <li id="right_pro"><a class="menu" href="php/profilo.php">Profilo</a></li>
 
+=======
+          <li id="left"><a class="menu"href="#">Materie</a></li>
+          <li id="left"><a class="menu" href="#">Tutor</a></li>
+          <li id="left" ><a  class="menu"href="#">Come funziona</a></li>
+            <li id = "right_log">  <?php
+            barraIndex();
+          ?></li>
+
+          <li id="right_pro"><a class="menu" href="php/profilo.php">Profilo</a></li>
+>>>>>>> sperumma
         </ul>
         </div>
         <div id ="pos_centro" ><img src = "Images/libro.jpg" alt="libro" height="100%" width="100%"></div>
@@ -36,6 +47,17 @@
           <input id = "pos_citta" type= "text" name="search" placeholder="Citt&agrave;">
         </form>
         <button id ="pos_bottone" class="button button2">Cerca</button>
+<<<<<<< d0ea99166108bf38a3c5c7e22d2cc814a16639ab
+=======
+        <div id="pos_contatto"><p class = "box"><a href="#">Contatti</a><br><a href="#">FAQ</a></p>
+        <p class="box_right"><a href="#">Termini e condizioni</a><br><a href="#">Privacy policy</a></p>
+        <img src="images/facebook.png" alt="icona facebook" id="pos_facebook">
+        <img src="images/twitter.png" alt="icona twitter" id="pos_twitter">
+        <img src="images/google_plus.png" alt="icona google_plus" id="pos_google">
+        <img src="images/you-tube.png" alt="icona facebook" id="pos_youtube">
+        </div>
+
+>>>>>>> sperumma
 
 
         <div id="pos_contatto"><p class = "box"><a href="#">Contatti</a><br><a href="#">FAQ</a></p>

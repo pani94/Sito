@@ -2,6 +2,7 @@
 function barra(){
     if(isset($_SESSION["accesso"])){
                  if($_SESSION["accesso"]!= "true"){
+<<<<<<< d0ea99166108bf38a3c5c7e22d2cc814a16639ab
              ?>   <a class="menu" href="php/login.php">Login</a>
           <a class="menu" href="php/registrati.php">Registrati</a> <?php
           }
@@ -12,7 +13,36 @@ function barra(){
               else{
                 ?>   <a class="menu" href="php/login.php">Login</a>
           <a class="menu" href="php/registrati.php" >Registrati</a> <?php
+=======
+             ?>   <a class="menu" href="login.php">Login</a>
+          <a class="menu" href="registrati.php">Registrati</a> <?php
+          }
+                 else{
+                  ?>   <a class="menu" href="logout.php">Logout</a><?php
+                 }
             }
+              else{
+                ?>  <a class="menu" href="login.php">Login</a>
+          <a class="menu" href="registrati.php">Registrati</a> <?php
+>>>>>>> sperumma
+            }
+
+}
+function barraIndex(){
+   if(isset($_SESSION["accesso"])){
+                 if($_SESSION["accesso"]!= "true"){
+             ?>   <a class="menu" href="php/login.php">Login</a>
+          <a class="menu" href="php/registrati.php">Registrati</a> <?php
+          }
+                 else{
+                  ?>   <a class="menu" href="php/logout.php">Logout</a><?php
+                 }
+            }
+              else{
+                ?>  <a class="menu" href="php/login.php">Login</a>
+          <a class="menu" href="php/registrati.php">Registrati</a> <?php
+            }
+
 
 }
 function test_input($data){
