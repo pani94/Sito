@@ -4,7 +4,6 @@
 ?>
 <!DOCTYPE html>
 <html>
-<!-- ciao -->
     <head>
         <title>Homepage</title>
         <link rel="stylesheet" type="text/css" href="css/stileHome.css"/>
@@ -24,7 +23,7 @@
           <?php
             barra();
           ?>
-          <li id="left"><a class="menu" href="php/profilo.php">Profilo</a></li>
+          <li id="left"><a class="menu ciao" href="php/profilo.php">Profilo</a></li>
 
         </ul>
         </div>
