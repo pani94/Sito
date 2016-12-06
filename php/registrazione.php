@@ -1,6 +1,6 @@
 <?php
     session_start();
-   include "function.php";
+   include "php/function.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -45,7 +45,7 @@ $user = mysqli_real_escape_string($conn, $pul);
        $imm = "Images/generic.jpg";
         $sql = "INSERT INTO Utenti (mail, user, password,nome,cognome,citta,immagine) VALUES ('$mail', '$user', '$pass','$nome','$cognome','$citta','$imm')";
  if(mysqli_query($conn, $sql)){
-    header("Location: login.php");
+    header("Location: php/login.php");
     exit;
     mysqli_close($conn);
  }
@@ -56,7 +56,7 @@ else{
 
     }
    else{
-        header("Location: registrati.php");
+        header("Location: php/registrati.php");
     exit;
     }
 

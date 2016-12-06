@@ -1,6 +1,6 @@
 <?php
     session_start();
-   include "function.php";
+   include "php/function.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -8,7 +8,7 @@
     <head>
         <title>Tutor.it</title>
         <link rel="stylesheet" type="text/css" href="stile.css"/>
-        <script src="form.js" ></script>
+        <script src="js/form.js" ></script>
     </head>
 
     <body>
@@ -22,11 +22,11 @@
            barra();
 
           ?>
-          <li id="left"><a class="menu" href="profilo.php">Profilo</a></li>
+          <li id="left"><a class="menu" href="php/profilo.php">Profilo</a></li>
         </ul>
         </div>
         <div id="pos_form">
-        <form method="post" action="accesso.php" >
+        <form method="post" action="php/accesso.php" >
         <fieldset>
         <legend>Login</legend>
             <table>

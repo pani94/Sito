@@ -1,6 +1,6 @@
 $(document).ready(function($){
 	$('#pos_materia').autocomplete({
-		source:'autocomplete.php',
+		source:'php/autocomplete.php',
 		minLength:2,
 		select: function(event,ui){
              $( this ).val( ui.item.nome );

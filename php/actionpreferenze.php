@@ -1,6 +1,6 @@
 <?php
     session_start();
-   include "function.php";
+   include "php/function.php";
    autorizza();
 ?>
 <!DOCTYPE html>
@@ -23,7 +23,7 @@
             }
             mysqli_close($conn);
             if($numero_preferenze == $count){
-                header("Location: profilo.php");
+                header("Location: php/profilo.php");
                 exit;
             }
             //Fare un else dove gli dico che le azione che ho fatto non sono andate a buon fine!

@@ -1,5 +1,5 @@
 <?php
-    include "function.php";
+    include "php/function.php";
     session_start();
 if(isset($_SESSION["accesso"])){
     if($_SESSION["accesso"] != "true"){
@@ -15,8 +15,8 @@ if(isset($_SESSION["accesso"])){
 
     <head>
         <title>Tutor.it</title>
-        <link rel="stylesheet" type="text/css" href="stile.css"/>
-        <script src="form.js" ></script>
+        <link rel="stylesheet" type="text/css" href="css/stile.css"/>
+        <script src="js/form.js" ></script>
 
 
     </head>
@@ -35,12 +35,12 @@ if(isset($_SESSION["accesso"])){
            barra();
 
           ?>
-          <li id="left"><a class="menu" href="profilo.php">Profilo</a></li>
+          <li id="left"><a class="menu" href="php/profilo.php">Profilo</a></li>
         </ul>
 
         </div>
         <div id="pos_form">
-        <form method="post" action="registrazione.php" onsubmit= "return checkForm()" >
+        <form method="post" action="php/registrazione.php" onsubmit= "return checkForm()" >
         <fieldset>
         <legend>Registrazione</legend>
             <table>

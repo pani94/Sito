@@ -1,6 +1,6 @@
 <?php
     session_start();
-   include "function.php";
+   include "php/function.php";
    autorizza();
 ?>
 <!DOCTYPE html>
@@ -25,21 +25,21 @@
 
      $_SESSION["modificapass"] = "true";
      mysqli_close($conn);
-     header("Location: profilo.php");
+     header("Location: php/profilo.php");
      exit;
  }
 else{
      mysqli_close($conn);
      $_SESSION["modificapass"] = "false";
      $_SESSION["oldpasserr"] = "Password Sbagliata";
-     header("Location: modificapass.php");
+     header("Location: php/modificapass.php");
      exit;
 }
 
     }
    else{
         $_SESSION["modificapass"] = "false";
-        header("Location: modificapass.php");
+        header("Location: php/modificapass.php");
         exit;
     }
 

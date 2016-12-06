@@ -1,5 +1,5 @@
 <?php
-include "function.php";
+include "php/function.php";
     session_start();
 
 ?>
@@ -8,9 +8,9 @@ include "function.php";
 
     <head>
         <title>Tutor.it</title>
-        <link rel="stylesheet" type="text/css" href="stile.css"/>
-         <link rel="stylesheet" type="text/css" href="stile_profilo.css"/>
-        <script src="form.js" ></script>
+        <link rel="stylesheet" type="text/css" href="css/stile.css"/>
+         <link rel="stylesheet" type="text/css" href="css/stile_profilo.css"/>
+        <script src="js/form.js" ></script>
     </head>
 
     <body>
@@ -23,7 +23,7 @@ include "function.php";
         <?php
           barra();
           ?>
-         <li id="left"><a class="menu" href="profilo.php">Profilo</a></li>
+         <li id="left"><a class="menu" href="php/profilo.php">Profilo</a></li>
          </ul>
         </div>
 
