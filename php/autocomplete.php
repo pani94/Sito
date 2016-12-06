@@ -1,6 +1,6 @@
 <?php
 
-include "php/function.php";
+include "function.php";
  $conn = mysqli_connect("localhost", "S3959772", "AlexDelPiero10","S3959772");
 if(isset($_GET['term'])){
     $term= test_input($_GET['term']);

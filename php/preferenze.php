@@ -1,5 +1,5 @@
 <?php
-    include "php/function.php";
+    include "function.php";
     session_start();
     autorizza();
 
@@ -12,8 +12,8 @@
 
     <head>
         <title>Tutor.it</title>
-        <link rel="stylesheet" type="text/css" href="stile.css"/>
-        <link rel="stylesheet" type="text/css" href="css/stilemodifica.css"/>
+        <link rel="stylesheet" type="text/css" href="..css/stile.css"/>
+        <link rel="stylesheet" type="text/css" href="..css/stilemodifica.css"/>
         <script src="form.js" ></script>
     </head>
 
@@ -28,12 +28,12 @@
            barra();
 
           ?>
-          <li id="left"><a class="menu" href="php/profilo.php">Profilo</a></li>
+          <li id="left"><a class="menu" href="profilo.php">Profilo</a></li>
         </ul>
 
         </div>
         <div id="pos_form">
-         <form method="post" action="php/actionpreferenze.php">
+         <form method="post" action="actionpreferenze.php">
               <h3>Quali sono le tue materie preferite?</h3>
               <input type="checkbox" name="interessi[]" value="matematica"/> Matematica <br/><br/>
               <input type="checkbox" name="interessi[]" value="italiano"/> Italiano<br/><br/>

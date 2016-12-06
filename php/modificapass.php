@@ -1,5 +1,5 @@
 <?php
-    include "php/function.php";
+    include "function.php";
     session_start();
     autorizza();
 
@@ -11,9 +11,9 @@
 
     <head>
         <title>Tutor.it</title>
-        <link rel="stylesheet" type="text/css" href="css/stile.css"/>
-        <link rel="stylesheet" type="text/css" href="css/stilemodifica.css"/>
-        <script src="js/form.js" ></script>
+        <link rel="stylesheet" type="text/css" href="..css/stile.css"/>
+        <link rel="stylesheet" type="text/css" href="..css/stilemodifica.css"/>
+        <script src="..js/form.js" ></script>
     </head>
 
     <body>
@@ -27,12 +27,12 @@
            barra();
 
           ?>
-          <li id="left"><a class="menu" href="php/profilo.php">Profilo</a></li>
+          <li id="left"><a class="menu" href="profilo.php">Profilo</a></li>
         </ul>
 
         </div>
         <div id="pos_form">
-     <form name ="myForm" method="post"  action="php/actionmodificapass.php" onsubmit= "return checkFormPass()">
+     <form name ="myForm" method="post"  action="actionmodificapass.php" onsubmit= "return checkFormPass()">
 
       <fieldset >
         <legend>Modifica</legend>

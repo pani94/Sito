@@ -22,13 +22,13 @@ function test_input($data){
 function autorizza(){
      if(isset($_SESSION["accesso"])){
          if($_SESSION["accesso"] != "true"){
-              header("Location: php/login.php");
+              header("Location: login.php");
               exit;
          }
 
      }
     else{
-         header("Location: php/login.php");
+         header("Location: login.php");
          exit;
     }
 }
@@ -112,10 +112,10 @@ function welcome(){
 
              </form>
              <p id ="pos_modifica">
-                 <a href = "php/modifica.php">Modifica il tuo profilo</a> <br>
-                 <a href = "php/modificapass.php">Modifica la tua password</a>
+                 <a href = "modifica.php">Modifica il tuo profilo</a> <br>
+                 <a href = "modificapass.php">Modifica la tua password</a>
                  <br>
-                 <a href = "php/preferenze.php">Inserisci le tue materie preferite</a>
+                 <a href = "preferenze.php">Inserisci le tue materie preferite</a>
                 </p>
 
             <?php
@@ -123,13 +123,13 @@ function welcome(){
 
                   }
                    else{
-                         ?> <div id = "pos_scritta" >Per accedere alla pagina effettua il  <a  href="php/login.php">login</a>  oppure  <a href="èhp/registrati.php"> registrati </a></div> <?php
+                         ?> <div id = "pos_scritta" >Per accedere alla pagina effettua il  <a  href="login.php">login</a>  oppure  <a href="registrati.php"> registrati </a></div> <?php
 
                      }
 
         }
         else{
-          ?> <div id = "pos_scritta" >Per accedere alla pagina effettua il  <a  href="php/login.php">login</a>  oppure  <a href="php/registrati.php"> registrati </a></div> <?php
+          ?> <div id = "pos_scritta" >Per accedere alla pagina effettua il  <a  href="login.php">login</a>  oppure  <a href="registrati.php"> registrati </a></div> <?php
 
         }
 

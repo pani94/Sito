@@ -2,7 +2,7 @@
 <html>
 <body>
 <?php
-include "php/function.php";
+include "function.php";
 session_start();
 $conn = mysqli_connect("localhost", "S3959772", "AlexDelPiero10","S3959772");
  $mypass= $_POST["password"];
@@ -18,7 +18,7 @@ $sql = "SELECT * FROM Utenti WHERE user = '$myusername' and password = '$mypassw
        if($count == 1){
            infoUtente($row);
             $_SESSION["accesso"] = "true";
-           header("Location: php/profilo.php");
+           header("Location: profilo.php");
           exit;
            }
      else{
@@ -31,7 +31,7 @@ $sql = "SELECT * FROM Utenti WHERE user = '$myusername' and password = '$mypassw
 
 
     if( $_SESSION["accesso"] == "false"){
-         header("Location: php/login.php");
+         header("Location: login.php");
           exit;
 
     }

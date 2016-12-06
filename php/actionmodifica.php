@@ -1,6 +1,6 @@
 <?php
     session_start();
-   include "php/function.php";
+   include "function.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -68,20 +68,20 @@ $telefono = mysqli_real_escape_string($conn, $pul);
      infoUtente($row);
      $_SESSION["modifica"] = "true";
      mysqli_close($conn);
-     header("Location: php/profilo.php");
+     header("Location: profilo.php");
      exit;
  }
 else{
      mysqli_close($conn);
      $_SESSION["modifica"] = "false";
-     header("Location: php/modifica.php");
+     header("Location: modifica.php");
      exit;
 }
 
     }
    else{
         $_SESSION["modifica"] = "false";
-        header("Location: php/modifica.php");
+        header("Location: modifica.php");
         exit;
     }
 
