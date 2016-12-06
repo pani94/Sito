@@ -209,7 +209,7 @@ function liveCheck(id){
         }
     };
     var params = id+"="+document.getElementById(id).value;
-    xmlhttp.open("POST","ajaxcheck.php",true);
+    xmlhttp.open("POST","../php/ajaxcheck.php",true);
     xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xmlhttp.setRequestHeader("Content-length",params.length);
     xmlhttp.setRequestHeader("Connection","close");
