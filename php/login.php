@@ -1,6 +1,6 @@
 <?php
     session_start();
-   include "php/function.php";
+   include stream_resolve_include_path ("php/function.php");
 ?>
 <!DOCTYPE html>
 <html>
