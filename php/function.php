@@ -2,16 +2,16 @@
 function barra(){
     if(isset($_SESSION["accesso"])){
                  if($_SESSION["accesso"]!= "true"){
-             ?>   <li ><a class="menu" href="php/login.php">Login</a></li>
-          <li id = "right_reg"><a class="menu" href="php/registrati.php">Registrati</a></li> <?php
+             ?>   <a class="menu" href="php/login.php">Login</a>
+          <a class="menu" href="php/registrati.php">Registrati</a> <?php
           }
                  else{
-                  ?>    <li ><a class="menu" href="php/logout.php">Logout</a></li><?php
+                  ?>    <a class="menu" href="php/logout.php">Logout</a><?php
                  }
             }
               else{
-                ?>   <li ><a class="menu" href="php/login.php">Login</a></li>
-          <li ><a class="menu" href="php/registrati.php">Registrati</a></li> <?php
+                ?>   <a class="menu" href="php/login.php">Login</a>
+          <a class="menu" href="php/registrati.php" >Registrati</a> <?php
             }
 
 }
