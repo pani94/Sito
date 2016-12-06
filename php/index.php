@@ -4,7 +4,7 @@
 ?>
 <!DOCTYPE html>
 <html>
-
+<!-- ciao -->
     <head>
         <title>Homepage</title>
         <link rel="stylesheet" type="text/css" href="css/stileHome.css"/>
